@@ -1,0 +1,28 @@
+{
+  "name": "electronvue",
+  "private": true,
+  "version": "0.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "nodemon --exec electron .",
+    "packager": "electron-packager ./ App --platform=win32 --arch=x64 --overwrite"
+  },
+  "dependencies": {
+    "electron-win-state": "^1.1.22",
+    "element-plus": "^2.2.19",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "stylus": "^0.59.0",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "electron": "^21.2.0",
+    "electron-packager": "^17.1.0",
+    "vite": "^3.2.0"
+  }
+}
